@@ -1576,15 +1576,22 @@ var render = function() {
     [
       _c(
         "nav",
-        { staticClass: "col" },
+        { staticClass: "col text-center mt-3" },
         [
-          _c("router-link", { attrs: { to: { name: "book" } } }, [
-            _vm._v("QL sách")
-          ]),
+          _c(
+            "router-link",
+            { staticClass: "btn btn-success", attrs: { to: { name: "book" } } },
+            [_vm._v("QL sách")]
+          ),
           _vm._v(" "),
-          _c("router-link", { attrs: { to: { name: "author" } } }, [
-            _vm._v("QL tác giả")
-          ])
+          _c(
+            "router-link",
+            {
+              staticClass: "btn btn-success",
+              attrs: { to: { name: "author" } }
+            },
+            [_vm._v("QL tác giả")]
+          )
         ],
         1
       ),
